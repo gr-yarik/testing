@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		558DE6952605162E008F680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558DE6932605162E008F680B /* Main.storyboard */; };
 		558DE6972605162F008F680B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558DE6962605162F008F680B /* Assets.xcassets */; };
 		558DE69A2605162F008F680B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558DE6982605162F008F680B /* LaunchScreen.storyboard */; };
+		558DE6A726053F21008F680B /* AuthPM in Frameworks */ = {isa = PBXBuildFile; productRef = 558DE6A626053F21008F680B /* AuthPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		558DE6962605162F008F680B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		558DE6992605162F008F680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		558DE69B2605162F008F680B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558DE6A326052E78008F680B /* AuthPM */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AuthPM; path = ../AuthPM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558DE6A726053F21008F680B /* AuthPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +43,10 @@
 		558DE6812605162E008F680B = {
 			isa = PBXGroup;
 			children = (
+				558DE6A326052E78008F680B /* AuthPM */,
 				558DE68C2605162E008F680B /* Testing */,
 				558DE68B2605162E008F680B /* Products */,
+				558DE6A526053F21008F680B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = Testing;
 			sourceTree = "<group>";
 		};
+		558DE6A526053F21008F680B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = Testing;
+			packageProductDependencies = (
+				558DE6A626053F21008F680B /* AuthPM */,
+			);
 			productName = Testing;
 			productReference = 558DE68A2605162E008F680B /* Testing.app */;
 			productType = "com.apple.product-type.application";
@@ -341,6 +356,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		558DE6A626053F21008F680B /* AuthPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AuthPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 558DE6822605162E008F680B /* Project object */;
 }
