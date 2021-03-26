@@ -10,11 +10,16 @@ import AuthPM
 
 class ViewController: UIViewController {
 
-    let authPM = AuthPM(appId: "sss")
-    
+    let authPM = AuthPM(appId: 1, deepLinkingScheme: "pmacademy")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let newLayer = CAGradientLayer()
+        newLayer.colors = [UIColor.black.cgColor, UIColor.yellow.cgColor]
+        newLayer.frame = view.frame
+        view.layer.insertSublayer(newLayer, at: 0)
+        
         layoutUI()
     }
 
@@ -27,8 +32,8 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             authButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             authButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            authButton.heightAnchor.constraint(equalToConstant: 100),
-            authButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+            authButton.heightAnchor.constraint(equalToConstant: 75),
+            authButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70)
         ])
     }
 
